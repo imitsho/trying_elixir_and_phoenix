@@ -67,7 +67,7 @@ defmodule Lesson1Calc do
   """
 
   @spec div(number(), number()) :: float() | :error
-  def div(_x, y) when y == 0 do
+  def div(_x, 0) do
     raise "Bad argument in arithmetic expression: second parametr can't be 0"
   end
 
